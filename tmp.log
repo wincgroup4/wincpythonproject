@@ -1,0 +1,739 @@
+INFO 2022-12-11 23:36:33,822 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-11 23:36:33,822 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-11 23:36:33,824 ::  * Restarting with stat
+WARNING 2022-12-11 23:36:34,872 ::  * Debugger is active!
+INFO 2022-12-11 23:36:34,876 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:36:41,036 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "GET / HTTP/1.1" 200 -
+INFO 2022-12-11 23:36:41,341 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,370 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,370 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,371 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,371 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,479 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,772 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:41,813 :: 127.0.0.1 - - [11/Dec/2022 23:36:41] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:36:47,616 :: 127.0.0.1 - - [11/Dec/2022 23:36:47] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-11 23:36:53,044 :: Instantiated the object
+INFO 2022-12-11 23:36:54,361 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:36:54,430 :: Connection to Database banking.db established
+INFO 2022-12-11 23:36:55,638 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-11 23:36:57,301 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-11 23:36:57,984 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:36:59,324 :: Instantiated the object
+INFO 2022-12-11 23:36:59,442 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-11 23:37:00,424 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:37:01,000 :: Instantiated the object
+INFO 2022-12-11 23:37:01,632 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:37:02,317 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:37:02,983 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-11 23:37:02,994 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:37:03,648 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:37:04,167 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:37:07,413 :: Instantiated the object
+INFO 2022-12-11 23:37:08,447 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:37:09,426 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-11 23:37:10,078 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:37:10,084 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-11 23:37:10,084 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-11 23:37:11,055 :: No. of columns containing null values:4
+INFO 2022-12-11 23:37:12,039 :: No. of columns not containing null values:12
+INFO 2022-12-11 23:37:12,039 :: Total no. of columns in the dataframe16
+INFO 2022-12-11 23:37:12,231 :: Connection to Database banking.db established
+INFO 2022-12-11 23:37:15,417 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-11 23:37:16,514 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-11 23:37:16,517 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-11 23:37:16,839 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-11 23:37:34,038 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-11 23:37:35,174 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-11 23:37:35,860 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-11 23:37:35,861 :: 127.0.0.1 - - [11/Dec/2022 23:37:35] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-11 23:37:35,883 :: 127.0.0.1 - - [11/Dec/2022 23:37:35] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:37:36,195 :: 127.0.0.1 - - [11/Dec/2022 23:37:36] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:37:36,195 :: 127.0.0.1 - - [11/Dec/2022 23:37:36] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:37:36,525 :: 127.0.0.1 - - [11/Dec/2022 23:37:36] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:37:36,526 :: 127.0.0.1 - - [11/Dec/2022 23:37:36] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:37:48,793 :: 127.0.0.1 - - [11/Dec/2022 23:37:48] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-11 23:37:55,968 :: 127.0.0.1 - - [11/Dec/2022 23:37:55] "GET /digital-to-cash-stats.html HTTP/1.1" 200 -
+INFO 2022-12-11 23:38:00,317 :: 127.0.0.1 - - [11/Dec/2022 23:38:00] "[36mGET /code-coverage-report.html HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:38:00,638 :: 127.0.0.1 - - [11/Dec/2022 23:38:00] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:38:00,640 :: 127.0.0.1 - - [11/Dec/2022 23:38:00] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:38:00,664 :: 127.0.0.1 - - [11/Dec/2022 23:38:00] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:41:50,338 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\utilities.py', reloading
+INFO 2022-12-11 23:41:50,561 ::  * Restarting with stat
+WARNING 2022-12-11 23:41:51,746 ::  * Debugger is active!
+INFO 2022-12-11 23:41:51,751 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:42:18,186 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\utilities.py', reloading
+INFO 2022-12-11 23:42:18,295 ::  * Restarting with stat
+WARNING 2022-12-11 23:42:19,446 ::  * Debugger is active!
+INFO 2022-12-11 23:42:19,450 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:42:36,816 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\utilities.py', reloading
+INFO 2022-12-11 23:42:36,922 ::  * Restarting with stat
+WARNING 2022-12-11 23:42:38,028 ::  * Debugger is active!
+INFO 2022-12-11 23:42:38,032 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:42:43,136 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:42:43,246 ::  * Restarting with stat
+WARNING 2022-12-11 23:42:44,366 ::  * Debugger is active!
+INFO 2022-12-11 23:42:44,370 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:45:18,053 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:45:18,155 ::  * Restarting with stat
+WARNING 2022-12-11 23:45:19,258 ::  * Debugger is active!
+INFO 2022-12-11 23:45:19,263 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:45:26,384 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:45:26,485 ::  * Restarting with stat
+WARNING 2022-12-11 23:45:27,773 ::  * Debugger is active!
+INFO 2022-12-11 23:45:27,778 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:45:47,124 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:45:47,224 ::  * Restarting with stat
+WARNING 2022-12-11 23:45:48,351 ::  * Debugger is active!
+INFO 2022-12-11 23:45:48,356 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:46:01,581 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:46:01,676 ::  * Restarting with stat
+WARNING 2022-12-11 23:46:02,775 ::  * Debugger is active!
+INFO 2022-12-11 23:46:02,780 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:46:26,278 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:46:26,385 ::  * Restarting with stat
+WARNING 2022-12-11 23:46:27,552 ::  * Debugger is active!
+INFO 2022-12-11 23:46:27,557 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:47:14,414 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\send_email.py', reloading
+INFO 2022-12-11 23:47:14,515 ::  * Restarting with stat
+WARNING 2022-12-11 23:47:15,647 ::  * Debugger is active!
+INFO 2022-12-11 23:47:15,652 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:47:19,741 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\send_email.py', reloading
+INFO 2022-12-11 23:47:19,848 ::  * Restarting with stat
+WARNING 2022-12-11 23:47:20,959 ::  * Debugger is active!
+INFO 2022-12-11 23:47:20,963 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:48:28,177 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:48:28,282 ::  * Restarting with stat
+WARNING 2022-12-11 23:48:29,392 ::  * Debugger is active!
+INFO 2022-12-11 23:48:29,397 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:48:35,524 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:48:35,622 ::  * Restarting with stat
+WARNING 2022-12-11 23:48:36,747 ::  * Debugger is active!
+INFO 2022-12-11 23:48:36,751 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:48:52,068 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:48:52,183 ::  * Restarting with stat
+WARNING 2022-12-11 23:48:53,364 ::  * Debugger is active!
+INFO 2022-12-11 23:48:53,368 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:48:54,395 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:48:54,503 ::  * Restarting with stat
+WARNING 2022-12-11 23:48:55,581 ::  * Debugger is active!
+INFO 2022-12-11 23:48:55,586 ::  * Debugger PIN: 287-747-602
+INFO 2022-12-11 23:49:01,704 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:49:01,794 ::  * Restarting with stat
+WARNING 2022-12-11 23:49:02,997 ::  * Debugger is active!
+INFO 2022-12-11 23:49:03,002 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:49:08,142 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:49:08,249 ::  * Restarting with stat
+WARNING 2022-12-11 23:49:09,357 ::  * Debugger is active!
+INFO 2022-12-11 23:49:09,362 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:49:15,496 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:49:15,594 ::  * Restarting with stat
+WARNING 2022-12-11 23:49:16,700 ::  * Debugger is active!
+INFO 2022-12-11 23:49:16,706 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:50:00,525 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:50:00,630 ::  * Restarting with stat
+WARNING 2022-12-11 23:50:01,752 ::  * Debugger is active!
+INFO 2022-12-11 23:50:01,757 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:50:14,014 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\send_email.py', reloading
+INFO 2022-12-11 23:50:14,128 ::  * Restarting with stat
+WARNING 2022-12-11 23:50:15,292 ::  * Debugger is active!
+INFO 2022-12-11 23:50:15,297 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:50:18,347 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:50:18,445 ::  * Restarting with stat
+WARNING 2022-12-11 23:50:19,563 ::  * Debugger is active!
+INFO 2022-12-11 23:50:19,568 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:50:22,633 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:50:22,738 ::  * Restarting with stat
+WARNING 2022-12-11 23:50:23,852 ::  * Debugger is active!
+INFO 2022-12-11 23:50:23,857 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:50:44,250 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:50:44,362 ::  * Restarting with stat
+WARNING 2022-12-11 23:50:45,476 ::  * Debugger is active!
+INFO 2022-12-11 23:50:45,480 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:51:09,899 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:51:10,016 ::  * Restarting with stat
+WARNING 2022-12-11 23:51:11,114 ::  * Debugger is active!
+INFO 2022-12-11 23:51:11,118 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:51:16,226 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:51:16,335 ::  * Restarting with stat
+WARNING 2022-12-11 23:51:17,442 ::  * Debugger is active!
+INFO 2022-12-11 23:51:17,446 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:53:05,338 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:53:05,450 ::  * Restarting with stat
+WARNING 2022-12-11 23:53:06,746 ::  * Debugger is active!
+INFO 2022-12-11 23:53:06,751 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:54:52,746 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:54:52,873 ::  * Restarting with stat
+WARNING 2022-12-11 23:54:54,044 ::  * Debugger is active!
+INFO 2022-12-11 23:54:54,048 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:54:58,124 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\main.py', reloading
+INFO 2022-12-11 23:54:58,226 ::  * Restarting with stat
+WARNING 2022-12-11 23:54:59,340 ::  * Debugger is active!
+INFO 2022-12-11 23:54:59,344 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:55:38,122 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\utilities.py', reloading
+INFO 2022-12-11 23:55:38,230 ::  * Restarting with stat
+WARNING 2022-12-11 23:55:39,346 ::  * Debugger is active!
+INFO 2022-12-11 23:55:39,350 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:55:47,515 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\plot_graph.py', reloading
+INFO 2022-12-11 23:55:47,626 ::  * Restarting with stat
+WARNING 2022-12-11 23:55:48,795 ::  * Debugger is active!
+INFO 2022-12-11 23:55:48,801 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:56:00,021 ::  * Detected change in 'C:\\Users\\cnandi\\Documents\\CBS_PROJECT\\server.py', reloading
+INFO 2022-12-11 23:56:00,121 ::  * Restarting with stat
+WARNING 2022-12-11 23:56:01,226 ::  * Debugger is active!
+INFO 2022-12-11 23:56:01,230 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:57:03,352 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-11 23:57:03,352 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-11 23:57:03,354 ::  * Restarting with stat
+WARNING 2022-12-11 23:57:04,417 ::  * Debugger is active!
+INFO 2022-12-11 23:57:04,421 ::  * Debugger PIN: 136-977-071
+INFO 2022-12-11 23:57:19,198 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "GET / HTTP/1.1" 200 -
+INFO 2022-12-11 23:57:19,287 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,459 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,552 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,554 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,554 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,594 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:19,774 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO 2022-12-11 23:57:19,905 :: 127.0.0.1 - - [11/Dec/2022 23:57:19] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:57:22,566 :: 127.0.0.1 - - [11/Dec/2022 23:57:22] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-11 23:57:28,786 :: Instantiated the object
+INFO 2022-12-11 23:57:30,127 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:57:30,186 :: Connection to Database banking.db established
+INFO 2022-12-11 23:57:31,409 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-11 23:57:33,018 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-11 23:57:34,619 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-11 23:57:35,125 :: Instantiated the object
+INFO 2022-12-11 23:57:36,353 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:57:36,448 :: Instantiated the object
+INFO 2022-12-11 23:57:37,653 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:57:37,771 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:57:38,441 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:57:38,919 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-11 23:57:39,076 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:57:39,697 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:57:40,233 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:57:43,580 :: Instantiated the object
+INFO 2022-12-11 23:57:44,571 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-11 23:57:45,586 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-11 23:57:46,243 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-11 23:57:46,248 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-11 23:57:46,248 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-11 23:57:47,272 :: No. of columns containing null values:4
+INFO 2022-12-11 23:57:48,208 :: No. of columns not containing null values:12
+INFO 2022-12-11 23:57:48,208 :: Total no. of columns in the dataframe16
+INFO 2022-12-11 23:57:48,394 :: Connection to Database banking.db established
+INFO 2022-12-11 23:57:51,590 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-11 23:57:52,572 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-11 23:57:52,574 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-11 23:57:52,859 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-11 23:58:10,211 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-11 23:58:11,327 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-11 23:58:11,989 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-11 23:58:11,991 :: 127.0.0.1 - - [11/Dec/2022 23:58:11] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-11 23:58:12,044 :: 127.0.0.1 - - [11/Dec/2022 23:58:12] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:12,358 :: 127.0.0.1 - - [11/Dec/2022 23:58:12] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:12,359 :: 127.0.0.1 - - [11/Dec/2022 23:58:12] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:17,866 :: 127.0.0.1 - - [11/Dec/2022 23:58:17] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-11 23:58:19,659 :: 127.0.0.1 - - [11/Dec/2022 23:58:19] "GET /digital-to-cash-stats.html HTTP/1.1" 200 -
+INFO 2022-12-11 23:58:20,886 :: 127.0.0.1 - - [11/Dec/2022 23:58:20] "[36mGET /code-coverage-report.html HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:21,195 :: 127.0.0.1 - - [11/Dec/2022 23:58:21] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:21,210 :: 127.0.0.1 - - [11/Dec/2022 23:58:21] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-11 23:58:21,226 :: 127.0.0.1 - - [11/Dec/2022 23:58:21] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:28,633 :: 127.0.0.1 - - [12/Dec/2022 12:24:28] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 12:24:28,677 :: 127.0.0.1 - - [12/Dec/2022 12:24:28] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:28,885 :: 127.0.0.1 - - [12/Dec/2022 12:24:28] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:29,042 :: 127.0.0.1 - - [12/Dec/2022 12:24:29] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:29,199 :: 127.0.0.1 - - [12/Dec/2022 12:24:29] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:29,207 :: 127.0.0.1 - - [12/Dec/2022 12:24:29] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:24:29,602 :: 127.0.0.1 - - [12/Dec/2022 12:24:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO 2022-12-12 12:24:30,874 :: 127.0.0.1 - - [12/Dec/2022 12:24:30] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 12:24:41,352 :: Instantiated the object
+INFO 2022-12-12 12:24:42,735 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:24:42,803 :: Connection to Database banking.db established
+INFO 2022-12-12 12:24:44,937 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 12:24:47,094 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 12:24:48,416 :: Instantiated the object
+INFO 2022-12-12 12:24:48,813 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 12:24:50,413 :: Instantiated the object
+INFO 2022-12-12 12:24:50,483 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:24:51,789 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:24:51,876 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:24:52,492 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:24:53,157 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:24:53,207 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 12:24:54,118 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:24:54,710 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:24:58,561 :: Instantiated the object
+INFO 2022-12-12 12:24:59,800 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:25:00,860 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 12:25:01,557 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:25:01,563 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 12:25:01,563 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 12:25:02,878 :: No. of columns containing null values:4
+INFO 2022-12-12 12:25:04,147 :: No. of columns not containing null values:12
+INFO 2022-12-12 12:25:04,147 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 12:25:04,355 :: Connection to Database banking.db established
+INFO 2022-12-12 12:25:07,735 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 12:25:08,737 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 12:25:08,739 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 12:25:09,029 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 12:25:23,252 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 12:25:24,383 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 12:25:24,458 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 12:25:24,460 :: 127.0.0.1 - - [12/Dec/2022 12:25:24] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 12:25:24,796 :: 127.0.0.1 - - [12/Dec/2022 12:25:24] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:25:24,797 :: 127.0.0.1 - - [12/Dec/2022 12:25:24] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:25:25,046 :: 127.0.0.1 - - [12/Dec/2022 12:25:25] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:25:25,140 :: 127.0.0.1 - - [12/Dec/2022 12:25:25] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:25:25,141 :: 127.0.0.1 - - [12/Dec/2022 12:25:25] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:26:58,943 :: 127.0.0.1 - - [12/Dec/2022 12:26:58] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:08,170 :: 127.0.0.1 - - [12/Dec/2022 12:27:08] "GET /digital-to-cash-stats.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:10,202 :: 127.0.0.1 - - [12/Dec/2022 12:27:10] "GET /code-coverage-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:10,517 :: 127.0.0.1 - - [12/Dec/2022 12:27:10] "GET /static/htmlcov/style.css HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:10,552 :: 127.0.0.1 - - [12/Dec/2022 12:27:10] "GET /static/htmlcov/coverage_html.js HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:10,552 :: 127.0.0.1 - - [12/Dec/2022 12:27:10] "GET /static/htmlcov/keybd_closed.png HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:11,410 :: 127.0.0.1 - - [12/Dec/2022 12:27:11] "GET /static/htmlcov/favicon_32.png HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:58,531 :: 127.0.0.1 - - [12/Dec/2022 12:27:58] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 12:27:58,844 :: 127.0.0.1 - - [12/Dec/2022 12:27:58] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:27:58,851 :: 127.0.0.1 - - [12/Dec/2022 12:27:58] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:27:59,211 :: 127.0.0.1 - - [12/Dec/2022 12:27:59] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:27:59,213 :: 127.0.0.1 - - [12/Dec/2022 12:27:59] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:27:59,222 :: 127.0.0.1 - - [12/Dec/2022 12:27:59] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:28:02,344 :: 127.0.0.1 - - [12/Dec/2022 12:28:02] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 12:28:07,919 :: Instantiated the object
+INFO 2022-12-12 12:28:09,169 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:28:09,227 :: Connection to Database banking.db established
+INFO 2022-12-12 12:28:10,376 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 12:28:11,819 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 12:28:13,253 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 12:28:13,828 :: Instantiated the object
+INFO 2022-12-12 12:28:14,824 :: Instantiated the object
+INFO 2022-12-12 12:28:15,023 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:28:16,158 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:28:16,384 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:28:16,834 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:28:17,410 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:28:17,628 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 12:28:18,383 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:28:19,196 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:28:22,797 :: Instantiated the object
+INFO 2022-12-12 12:28:24,024 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 12:28:25,165 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 12:28:25,849 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 12:28:25,856 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 12:28:25,856 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 12:28:26,976 :: No. of columns containing null values:4
+INFO 2022-12-12 12:28:28,105 :: No. of columns not containing null values:12
+INFO 2022-12-12 12:28:28,106 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 12:28:28,316 :: Connection to Database banking.db established
+INFO 2022-12-12 12:28:31,887 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 12:28:32,932 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 12:28:32,933 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 12:28:33,246 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 12:28:47,452 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 12:28:48,556 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 12:28:48,624 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 12:28:48,625 :: 127.0.0.1 - - [12/Dec/2022 12:28:48] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 12:28:48,954 :: 127.0.0.1 - - [12/Dec/2022 12:28:48] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:28:48,955 :: 127.0.0.1 - - [12/Dec/2022 12:28:48] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:28:49,283 :: 127.0.0.1 - - [12/Dec/2022 12:28:49] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:28:49,288 :: 127.0.0.1 - - [12/Dec/2022 12:28:49] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:28:49,313 :: 127.0.0.1 - - [12/Dec/2022 12:28:49] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:14,234 :: 127.0.0.1 - - [12/Dec/2022 12:29:14] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:29:15,682 :: 127.0.0.1 - - [12/Dec/2022 12:29:15] "GET /digital-to-cash-stats.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:29:16,492 :: 127.0.0.1 - - [12/Dec/2022 12:29:16] "[36mGET /code-coverage-report.html HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:16,803 :: 127.0.0.1 - - [12/Dec/2022 12:29:16] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:16,834 :: 127.0.0.1 - - [12/Dec/2022 12:29:16] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:16,835 :: 127.0.0.1 - - [12/Dec/2022 12:29:16] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:34,884 :: 127.0.0.1 - - [12/Dec/2022 12:29:34] "GET /static/htmlcov/db_utilities_py.html HTTP/1.1" 200 -
+INFO 2022-12-12 12:29:34,907 :: 127.0.0.1 - - [12/Dec/2022 12:29:34] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:35,121 :: 127.0.0.1 - - [12/Dec/2022 12:29:35] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 12:29:35,216 :: 127.0.0.1 - - [12/Dec/2022 12:29:35] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:17,544 :: 127.0.0.1 - - [12/Dec/2022 14:54:17] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 14:54:17,557 :: 127.0.0.1 - - [12/Dec/2022 14:54:17] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:17,795 :: 127.0.0.1 - - [12/Dec/2022 14:54:17] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:17,920 :: 127.0.0.1 - - [12/Dec/2022 14:54:17] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:18,113 :: 127.0.0.1 - - [12/Dec/2022 14:54:18] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:18,134 :: 127.0.0.1 - - [12/Dec/2022 14:54:18] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:54:22,577 :: 127.0.0.1 - - [12/Dec/2022 14:54:22] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 14:54:27,985 :: Instantiated the object
+INFO 2022-12-12 14:54:29,232 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 14:54:29,294 :: Connection to Database banking.db established
+INFO 2022-12-12 14:54:30,680 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 14:54:32,310 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 14:54:33,878 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 14:54:34,423 :: Instantiated the object
+INFO 2022-12-12 14:54:35,555 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 14:54:35,685 :: Instantiated the object
+INFO 2022-12-12 14:54:36,652 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 14:54:36,799 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 14:54:37,405 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 14:54:37,776 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 14:54:37,972 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 14:54:38,506 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 14:54:39,065 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 14:54:42,358 :: Instantiated the object
+INFO 2022-12-12 14:54:43,628 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 14:54:44,775 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 14:54:45,455 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 14:54:45,462 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 14:54:45,462 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 14:54:46,520 :: No. of columns containing null values:4
+INFO 2022-12-12 14:54:47,546 :: No. of columns not containing null values:12
+INFO 2022-12-12 14:54:47,546 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 14:54:47,749 :: Connection to Database banking.db established
+INFO 2022-12-12 14:54:51,187 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 14:54:52,320 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 14:54:52,321 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 14:54:52,640 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 14:55:22,155 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 14:55:23,647 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 14:55:23,749 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 14:55:23,751 :: 127.0.0.1 - - [12/Dec/2022 14:55:23] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 14:55:24,088 :: 127.0.0.1 - - [12/Dec/2022 14:55:24] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:55:24,089 :: 127.0.0.1 - - [12/Dec/2022 14:55:24] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:55:24,355 :: 127.0.0.1 - - [12/Dec/2022 14:55:24] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:55:24,419 :: 127.0.0.1 - - [12/Dec/2022 14:55:24] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 14:55:24,420 :: 127.0.0.1 - - [12/Dec/2022 14:55:24] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:58,868 :: 127.0.0.1 - - [12/Dec/2022 15:17:58] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 15:17:59,117 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,214 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,214 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,216 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,217 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,656 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,914 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:17:59,976 :: 127.0.0.1 - - [12/Dec/2022 15:17:59] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:18:08,663 :: 127.0.0.1 - - [12/Dec/2022 15:18:08] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 15:18:18,263 :: Instantiated the object
+INFO 2022-12-12 15:18:20,911 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:18:21,009 :: Connection to Database banking.db established
+INFO 2022-12-12 15:18:23,457 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 15:18:26,838 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 15:18:28,404 :: Instantiated the object
+INFO 2022-12-12 15:18:29,274 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 15:18:29,590 :: Instantiated the object
+INFO 2022-12-12 15:18:30,627 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:18:31,655 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:18:32,547 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:18:32,557 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:18:33,490 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:18:34,396 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 15:18:35,385 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:18:36,204 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:18:41,044 :: Instantiated the object
+INFO 2022-12-12 15:18:42,913 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:18:44,442 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 15:18:45,380 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:18:45,388 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 15:18:45,388 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 15:18:46,905 :: No. of columns containing null values:4
+INFO 2022-12-12 15:18:48,451 :: No. of columns not containing null values:12
+INFO 2022-12-12 15:18:48,451 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 15:18:48,717 :: Connection to Database banking.db established
+INFO 2022-12-12 15:18:54,631 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 15:18:56,257 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 15:18:56,259 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 15:18:56,717 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 15:19:11,335 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 15:19:13,053 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 15:19:13,171 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 15:19:13,172 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 15:19:13,508 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:19:13,508 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:19:13,757 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:19:13,852 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:19:13,853 :: 127.0.0.1 - - [12/Dec/2022 15:19:13] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:40:11,355 :: 127.0.0.1 - - [12/Dec/2022 15:40:11] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 15:53:09,217 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 15:53:09,485 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,549 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,549 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,549 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,550 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,596 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,905 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:53:09,906 :: 127.0.0.1 - - [12/Dec/2022 15:53:09] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:54:16,695 :: 127.0.0.1 - - [12/Dec/2022 15:54:16] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 15:54:22,397 :: Instantiated the object
+INFO 2022-12-12 15:54:24,567 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:54:24,662 :: Connection to Database banking.db established
+INFO 2022-12-12 15:54:28,141 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 15:54:30,774 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 15:54:33,005 :: Instantiated the object
+INFO 2022-12-12 15:54:33,067 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 15:54:33,752 :: Instantiated the object
+INFO 2022-12-12 15:54:34,855 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:54:35,534 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:54:36,326 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:54:36,433 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:54:37,032 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:54:37,788 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 15:54:38,553 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:54:39,247 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:54:43,082 :: Instantiated the object
+INFO 2022-12-12 15:54:44,440 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 15:54:45,751 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 15:54:46,551 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 15:54:46,557 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 15:54:46,557 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 15:54:47,861 :: No. of columns containing null values:4
+INFO 2022-12-12 15:54:49,471 :: No. of columns not containing null values:12
+INFO 2022-12-12 15:54:49,471 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 15:54:49,717 :: Connection to Database banking.db established
+INFO 2022-12-12 15:54:54,220 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 15:54:55,868 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 15:54:55,870 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 15:54:56,440 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 15:55:10,664 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 15:55:12,103 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 15:55:12,198 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 15:55:12,199 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 15:55:12,222 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:55:12,543 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:55:12,591 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:55:12,857 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:55:12,858 :: 127.0.0.1 - - [12/Dec/2022 15:55:12] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:56:13,285 :: 127.0.0.1 - - [12/Dec/2022 15:56:13] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 15:56:29,253 :: 127.0.0.1 - - [12/Dec/2022 15:56:29] "[36mGET /code-coverage-report.html HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:56:29,291 :: 127.0.0.1 - - [12/Dec/2022 15:56:29] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:56:29,607 :: 127.0.0.1 - - [12/Dec/2022 15:56:29] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:56:29,608 :: 127.0.0.1 - - [12/Dec/2022 15:56:29] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:07,918 :: 127.0.0.1 - - [12/Dec/2022 15:57:07] "GET /static/htmlcov/main_py.html HTTP/1.1" 200 -
+INFO 2022-12-12 15:57:07,936 :: 127.0.0.1 - - [12/Dec/2022 15:57:07] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:08,184 :: 127.0.0.1 - - [12/Dec/2022 15:57:08] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:08,248 :: 127.0.0.1 - - [12/Dec/2022 15:57:08] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:15,890 :: 127.0.0.1 - - [12/Dec/2022 15:57:15] "[36mGET /static/htmlcov/db_utilities_py.html HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:15,914 :: 127.0.0.1 - - [12/Dec/2022 15:57:15] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:16,124 :: 127.0.0.1 - - [12/Dec/2022 15:57:16] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:16,234 :: 127.0.0.1 - - [12/Dec/2022 15:57:16] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:23,919 :: 127.0.0.1 - - [12/Dec/2022 15:57:23] "GET /static/htmlcov/utilities_py.html HTTP/1.1" 200 -
+INFO 2022-12-12 15:57:23,929 :: 127.0.0.1 - - [12/Dec/2022 15:57:23] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:24,153 :: 127.0.0.1 - - [12/Dec/2022 15:57:24] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 15:57:24,244 :: 127.0.0.1 - - [12/Dec/2022 15:57:24] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:25:08,405 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-12 16:25:08,405 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-12 16:25:08,406 ::  * Restarting with stat
+WARNING 2022-12-12 16:25:09,552 ::  * Debugger is active!
+INFO 2022-12-12 16:25:09,554 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-12 16:25:33,647 :: 127.0.0.1 - - [12/Dec/2022 16:25:33] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:33,790 :: 127.0.0.1 - - [12/Dec/2022 16:25:33] "GET /static/support_files/nicepage.css HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:33,801 :: 127.0.0.1 - - [12/Dec/2022 16:25:33] "GET /static/support_files//Home.css HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:34,152 :: 127.0.0.1 - - [12/Dec/2022 16:25:34] "GET /static/support_files/jquery.js HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:34,195 :: 127.0.0.1 - - [12/Dec/2022 16:25:34] "GET /static/support_files/nicepage.js HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:34,209 :: 127.0.0.1 - - [12/Dec/2022 16:25:34] "GET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:34,489 :: 127.0.0.1 - - [12/Dec/2022 16:25:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO 2022-12-12 16:25:37,985 :: 127.0.0.1 - - [12/Dec/2022 16:25:37] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 16:25:43,877 :: Input file: C:\Users\chriden\Documents\WINC_Python_Project\transaction_data_encoded decoded successfully
+INFO 2022-12-12 16:25:50,643 :: Instantiated the object
+INFO 2022-12-12 16:25:53,938 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:25:54,101 :: Connection to Database banking.db established
+ERROR 2022-12-12 16:25:54,108 :: Caught an exception in function:execute_SELECT_query -----> DatabaseError("Execution failed on sql 'SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year': no such table: banking_data")
+ERROR 2022-12-12 16:25:57,182 :: Caught an exception in function:execute_SELECT_query -----> DatabaseError("Execution failed on sql 'SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id ': no such table: banking_data")
+INFO 2022-12-12 16:26:01,140 :: Instantiated the object
+INFO 2022-12-12 16:26:01,527 :: Instantiated the object
+INFO 2022-12-12 16:26:07,543 :: Instantiated the object
+INFO 2022-12-12 16:26:08,564 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:26:09,683 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 16:26:10,576 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:26:10,583 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 16:26:10,583 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 16:26:11,725 :: No. of columns containing null values:4
+INFO 2022-12-12 16:26:12,898 :: No. of columns not containing null values:12
+INFO 2022-12-12 16:26:12,898 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 16:26:13,125 :: Connection to Database banking.db established
+INFO 2022-12-12 16:26:17,648 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 16:26:18,858 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 16:26:18,890 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 16:26:19,257 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+ERROR 2022-12-12 16:26:33,522 :: Caught an exception in function:execute_SELECT_query -----> DatabaseError("Execution failed on sql 'SELECT * FROM (SELECT account_id, COUNT(operation) AS transactions, month, row_number() over (partition by month order by COUNT(operation) desc) as user_rank FROM banking_data GROUP BY account_id) users WHERE user_rank<=10 ': no such column: month")
+INFO 2022-12-12 16:26:33,566 :: 127.0.0.1 - - [12/Dec/2022 16:26:33] "[35m[1mPOST /app_run HTTP/1.1[0m" 500 -
+INFO 2022-12-12 16:26:33,617 :: 127.0.0.1 - - [12/Dec/2022 16:26:33] "GET /app_run?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO 2022-12-12 16:26:33,631 :: 127.0.0.1 - - [12/Dec/2022 16:26:33] "GET /app_run?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO 2022-12-12 16:26:33,656 :: 127.0.0.1 - - [12/Dec/2022 16:26:33] "GET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO 2022-12-12 16:26:33,721 :: 127.0.0.1 - - [12/Dec/2022 16:26:33] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:31,837 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-12 16:28:31,837 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-12 16:28:31,838 ::  * Restarting with stat
+WARNING 2022-12-12 16:28:32,916 ::  * Debugger is active!
+INFO 2022-12-12 16:28:32,919 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-12 16:28:55,808 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 16:28:55,867 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:55,878 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:55,934 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:55,946 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:55,956 :: 127.0.0.1 - - [12/Dec/2022 16:28:55] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:28:58,912 :: 127.0.0.1 - - [12/Dec/2022 16:28:58] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 16:29:05,046 :: Input file: C:\Users\chriden\Documents\WINC_Python_Project\transaction_data_encoded decoded successfully
+INFO 2022-12-12 16:29:11,474 :: Instantiated the object
+INFO 2022-12-12 16:29:14,826 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:29:14,927 :: Connection to Database banking.db established
+INFO 2022-12-12 16:29:18,148 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 16:29:20,729 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 16:29:22,965 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 16:29:23,136 :: Instantiated the object
+INFO 2022-12-12 16:29:23,647 :: Instantiated the object
+INFO 2022-12-12 16:29:25,796 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:29:26,187 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:29:27,101 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:29:27,554 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:29:28,091 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:29:29,704 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 16:29:30,633 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:29:31,312 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:29:35,026 :: Instantiated the object
+INFO 2022-12-12 16:29:36,195 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:29:37,346 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 16:29:38,159 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:29:38,166 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 16:29:38,166 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 16:29:39,399 :: No. of columns containing null values:4
+INFO 2022-12-12 16:29:40,657 :: No. of columns not containing null values:12
+INFO 2022-12-12 16:29:40,657 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 16:29:40,894 :: Connection to Database banking.db established
+INFO 2022-12-12 16:29:45,025 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 16:29:46,248 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 16:29:46,250 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 16:29:46,670 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+ERROR 2022-12-12 16:30:01,244 :: Caught an exception in function:execute_SELECT_query -----> DatabaseError("Execution failed on sql 'SELECT * FROM (SELECT account_id, COUNT(operation) AS transactions, month, row_number() over (partition by month order by COUNT(operation) desc) as user_rank FROM banking_data GROUP BY account_id) users WHERE user_rank<=10 ': no such column: month")
+INFO 2022-12-12 16:30:01,249 :: 127.0.0.1 - - [12/Dec/2022 16:30:01] "[35m[1mPOST /app_run HTTP/1.1[0m" 500 -
+INFO 2022-12-12 16:30:01,306 :: 127.0.0.1 - - [12/Dec/2022 16:30:01] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:30:01,326 :: 127.0.0.1 - - [12/Dec/2022 16:30:01] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:30:01,341 :: 127.0.0.1 - - [12/Dec/2022 16:30:01] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:31:56,398 ::  * Detected change in 'C:\\Users\\chriden\\Downloads\\CBS_PROJECT (1)\\CBS_PROJECT\\vardata.py', reloading
+INFO 2022-12-12 16:31:56,580 ::  * Restarting with stat
+INFO 2022-12-12 16:31:57,186 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-12 16:31:57,186 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-12 16:31:57,187 ::  * Restarting with stat
+WARNING 2022-12-12 16:31:57,805 ::  * Debugger is active!
+INFO 2022-12-12 16:31:57,808 ::  * Debugger PIN: 144-706-365
+WARNING 2022-12-12 16:31:58,338 ::  * Debugger is active!
+INFO 2022-12-12 16:31:58,341 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-12 16:32:33,049 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "GET / HTTP/1.1" 200 -
+INFO 2022-12-12 16:32:33,225 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:32:33,226 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:32:33,231 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:32:33,238 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:32:33,266 :: 127.0.0.1 - - [12/Dec/2022 16:32:33] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:32:37,465 :: 127.0.0.1 - - [12/Dec/2022 16:32:37] "GET /progress HTTP/1.1" 200 -
+INFO 2022-12-12 16:32:43,285 :: Input file: C:\Users\chriden\Documents\WINC_Python_Project\transaction_data_encoded decoded successfully
+INFO 2022-12-12 16:32:49,492 :: Instantiated the object
+INFO 2022-12-12 16:32:51,324 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:32:51,396 :: Connection to Database banking.db established
+INFO 2022-12-12 16:32:52,553 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 16:32:55,251 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 16:32:57,993 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 16:32:58,402 :: Instantiated the object
+INFO 2022-12-12 16:32:59,463 :: Instantiated the object
+INFO 2022-12-12 16:32:59,935 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:33:00,857 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:33:01,404 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:33:01,662 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:33:02,389 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:33:02,883 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 16:33:03,769 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:33:04,366 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:33:08,693 :: Instantiated the object
+INFO 2022-12-12 16:33:09,898 :: Dropped all NULL columns in the dataframe
+INFO 2022-12-12 16:33:11,120 :: Dropped all NULL rows in the dataframe
+INFO 2022-12-12 16:33:11,916 :: FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction
+INFO 2022-12-12 16:33:11,928 :: Dropped all NULL rows and cols and FLAG column created
+INFO 2022-12-12 16:33:11,928 :: No. of rows and columns in Dataframe::(1056320, 16)
+INFO 2022-12-12 16:33:13,133 :: No. of columns containing null values:4
+INFO 2022-12-12 16:33:14,269 :: No. of columns not containing null values:12
+INFO 2022-12-12 16:33:14,269 :: Total no. of columns in the dataframe16
+INFO 2022-12-12 16:33:14,492 :: Connection to Database banking.db established
+INFO 2022-12-12 16:33:18,659 :: Table banking_data created and loaded with dataframe data
+INFO 2022-12-12 16:33:19,812 :: select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed
+INFO 2022-12-12 16:33:19,814 :: Output file output_files\transactions_yearly.csv created successfully
+INFO 2022-12-12 16:33:20,138 :: select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed
+INFO 2022-12-12 16:33:36,848 :: select query :: SELECT * FROM (SELECT account_id, COUNT(operation) AS transactions, month, row_number() over (partition by month order by COUNT(operation) desc) as user_rank FROM banking_data GROUP BY account_id) users WHERE user_rank<=10  executed
+INFO 2022-12-12 16:33:37,021 :: output_files\bonus_to_pensioners.csv created successfully
+INFO 2022-12-12 16:33:39,587 :: Highst Digital/Cash transaction financial instituton is:
+op                           bank   CASH  DIGITAL  INVALID  ratio
+1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
+6                  JPMorgan Chase  45792    21720    13343  0.474
+INFO 2022-12-12 16:33:40,373 :: digital-to-cash transactions plotted in graph, refer file:static\digital-to-cash_stats.html
+INFO 2022-12-12 16:33:40,374 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "POST /app_run HTTP/1.1" 200 -
+INFO 2022-12-12 16:33:40,436 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:33:40,449 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:33:40,510 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:33:40,512 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:33:40,528 :: 127.0.0.1 - - [12/Dec/2022 16:33:40] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:33:58,066 :: 127.0.0.1 - - [12/Dec/2022 16:33:58] "GET /pytest-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:09,021 :: 127.0.0.1 - - [12/Dec/2022 16:34:09] "GET /digital-to-cash-stats.html HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:15,663 :: 127.0.0.1 - - [12/Dec/2022 16:34:15] "GET /code-coverage-report.html HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:15,694 :: 127.0.0.1 - - [12/Dec/2022 16:34:15] "GET /static/htmlcov/style.css HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:15,700 :: 127.0.0.1 - - [12/Dec/2022 16:34:15] "GET /static/htmlcov/coverage_html.js HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:15,703 :: 127.0.0.1 - - [12/Dec/2022 16:34:15] "GET /static/htmlcov/keybd_closed.png HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:15,749 :: 127.0.0.1 - - [12/Dec/2022 16:34:15] "GET /static/htmlcov/favicon_32.png HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:22,178 :: 127.0.0.1 - - [12/Dec/2022 16:34:22] "[36mGET /code-coverage-report.html HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:22,205 :: 127.0.0.1 - - [12/Dec/2022 16:34:22] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:22,213 :: 127.0.0.1 - - [12/Dec/2022 16:34:22] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:22,215 :: 127.0.0.1 - - [12/Dec/2022 16:34:22] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:25,501 :: 127.0.0.1 - - [12/Dec/2022 16:34:25] "GET /static/htmlcov/db_utilities_py.html HTTP/1.1" 200 -
+INFO 2022-12-12 16:34:25,528 :: 127.0.0.1 - - [12/Dec/2022 16:34:25] "[36mGET /static/htmlcov/style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:25,532 :: 127.0.0.1 - - [12/Dec/2022 16:34:25] "[36mGET /static/htmlcov/coverage_html.js HTTP/1.1[0m" 304 -
+INFO 2022-12-12 16:34:25,533 :: 127.0.0.1 - - [12/Dec/2022 16:34:25] "[36mGET /static/htmlcov/keybd_closed.png HTTP/1.1[0m" 304 -
+INFO 2022-12-12 17:25:46,602 ::  * Detected change in 'C:\\Users\\chriden\\Downloads\\CBS_PROJECT (1)\\CBS_PROJECT\\vardata.py', reloading
+INFO 2022-12-12 17:25:46,675 ::  * Detected change in 'C:\\Users\\chriden\\Downloads\\CBS_PROJECT (1)\\CBS_PROJECT\\vardata.py', reloading
+INFO 2022-12-12 17:25:46,867 ::  * Restarting with stat
+INFO 2022-12-12 17:25:47,100 ::  * Restarting with stat
+WARNING 2022-12-12 17:25:49,757 ::  * Debugger is active!
+WARNING 2022-12-12 17:25:49,761 ::  * Debugger is active!
+INFO 2022-12-12 17:25:49,767 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-12 17:25:49,770 ::  * Debugger PIN: 144-706-365
