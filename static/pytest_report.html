@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Pytest report for Core Banking System Project</h1>
-    <p>Report generated on 12-Dec-2022 at 16:33:04 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 15-Dec-2022 at 05:03:52 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -450,13 +450,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Windows-10-10.0.19044-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"html": "3.2.0", "metadata": "2.0.4", "xdist": "3.1.0"}</td></tr>
+        <td>{"cov": "4.0.0", "html": "3.2.0", "metadata": "2.0.4", "mock": "3.10.0", "xdist": "3.1.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.11.0</td></tr></table>
     <h2>Summary</h2>
-    <p>13 tests ran in 20.75 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">12 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">1 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 7.15 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -467,138 +467,21 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="xfailed results-table-row">
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">XFailed</td>
-          <td class="col-name">test_decode.py::test_expected_fail</td>
-          <td class="col-duration">0.10</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>testing\test_decode.py:46: in test_expected_fail<br/>    vals = df_test[transid_col].isin([&#x27;T0001&#x27;,&#x27;T0002&#x27;])<br/><span class="error">E   TypeError: &#x27;function&#x27; object is not subscriptable[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe</span><br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_decode.py::test_check</td>
-          <td class="col-duration">0.08</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>(&#x27;C:\\Users\\chriden\\Downloads\\CBS_PROJECT (1)\\CBS_PROJECT\\testing\\test_decode.py&#x27;, 54, &#x27;Skipped: Deliberately skipped&#x27;)[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_db_output.py::test_send_email</td>
-          <td class="col-duration">3.06</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_decode.py::test_input_file_exists</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_db_output.py::test_transaction_yearly::setup</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
+            <div class="log">[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>testing\conftest.py:15: in df_test<br/>    df_test.drop_null_cols()<br/>        df_test    = &lt;utilities.DataframeUtility object at 0x000001721B0FBC90&gt;<br/>utilities.py:52: in drop_null_cols<br/>    self.df.dropna(axis=1, how=&#x27;all&#x27;)<br/><span class="error">E   AttributeError: &#x27;str&#x27; object has no attribute &#x27;dropna&#x27;</span><br/>        self       = &lt;utilities.DataframeUtility object at 0x000001721B0FBC90&gt;<br/> -------------------------------Captured log setup------------------------------- <br/>ERROR    root:utilities.py:32 Caught an exception in function:__init__ -----&gt; FileNotFoundError(2, &#x27;No such file or directory&#x27;)<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_decode.py::test_decode_file</td>
-          <td class="col-duration">6.51</td>
+          <td class="col-name">test_db_output.py::test_send_email</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_db_output.py::test_transaction_yearly</td>
-          <td class="col-duration">8.70</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utilities.py:48 Instantiated the object
-INFO     root:utilities.py:53 Dropped all NULL columns in the dataframe
-INFO     root:db_utilities.py:12 Connection to Database banking.db established<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:db_utilities.py:22 select query :: SELECT year,MAX(tot) ,operation FROM ( SELECT year, COUNT(operation) as tot, operation from banking_data GROUP BY year, operation) GROUP BY year executed<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_decode.py::test_dataframe_values</td>
-          <td class="col-duration">0.08</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_decode.py::test_dataframe_NaN_values</td>
-          <td class="col-duration">4.33</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_db_output.py::test_email_account_balance</td>
-          <td class="col-duration">0.57</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:db_utilities.py:22 select query :: SELECT account_id, balance, bank, year FROM banking_data WHERE balance BETWEEN 0 AND 799 AND year=(SELECT MAX(year) FROM banking_data) GROUP BY account_id  executed<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_formatted_data.py::test_digital_cash_rtio</td>
-          <td class="col-duration">2.80</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw0] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:utilities.py:112 Highst Digital/Cash transaction financial instituton is:
-op                           bank   CASH  DIGITAL  INVALID  ratio
-1   Bank of New York Mellon Corp.  44683    21167    13622  0.474
-6                  JPMorgan Chase  45792    21720    13343  0.474<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_formatted_data.py::test_formatted_file</td>
-          <td class="col-duration">11.12</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utilities.py:48 Instantiated the object
-INFO     root:utilities.py:53 Dropped all NULL columns in the dataframe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:utilities.py:53 Dropped all NULL columns in the dataframe
-INFO     root:utilities.py:58 Dropped all NULL rows in the dataframe
-INFO     root:utilities.py:76 FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_formatted_data.py::test_flag_operation_values</td>
-          <td class="col-duration">7.84</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utilities.py:48 Instantiated the object
-INFO     root:utilities.py:53 Dropped all NULL columns in the dataframe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:utilities.py:76 FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_formatted_data.py::test_pension_bonus</td>
-          <td class="col-duration">0.99</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:utilities.py:76 FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_formatted_data.py::test_flag_duplicate_trans_values</td>
-          <td class="col-duration">0.59</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe[gw2] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:utilities.py:76 FLAG column updated with:Transaction ID is duplicateand Suspicious Transaction<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.0 C:\Users\chriden\AppData\Local\Programs\Python\Python311\python.exe<br/></div></td></tr></tbody></table></body></html>

@@ -737,3 +737,68 @@ WARNING 2022-12-12 17:25:49,757 ::  * Debugger is active!
 WARNING 2022-12-12 17:25:49,761 ::  * Debugger is active!
 INFO 2022-12-12 17:25:49,767 ::  * Debugger PIN: 144-706-365
 INFO 2022-12-12 17:25:49,770 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 04:56:31,812 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-15 04:56:31,813 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-15 04:56:31,814 ::  * Restarting with stat
+WARNING 2022-12-15 04:56:32,877 ::  * Debugger is active!
+INFO 2022-12-15 04:56:32,879 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 04:56:40,732 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "GET / HTTP/1.1" 200 -
+INFO 2022-12-15 04:56:40,932 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:40,941 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:40,942 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:40,943 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:40,944 :: 127.0.0.1 - - [15/Dec/2022 04:56:40] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:46,650 :: 127.0.0.1 - - [15/Dec/2022 04:56:46] "GET /progress HTTP/1.1" 200 -
+ERROR 2022-12-15 04:56:46,661 :: Caught an exception in function:decode_file -----> FileNotFoundError(2, 'No such file or directory')
+ERROR 2022-12-15 04:56:48,829 :: Caught an exception in function:__init__ -----> FileNotFoundError(2, 'No such file or directory')
+ERROR 2022-12-15 04:56:54,320 :: Caught an exception in function:__init__ -----> FileNotFoundError(2, 'No such file or directory')
+INFO 2022-12-15 04:56:54,327 :: 127.0.0.1 - - [15/Dec/2022 04:56:54] "[35m[1mPOST /app_run HTTP/1.1[0m" 500 -
+INFO 2022-12-15 04:56:54,364 :: 127.0.0.1 - - [15/Dec/2022 04:56:54] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:54,366 :: 127.0.0.1 - - [15/Dec/2022 04:56:54] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:54,377 :: 127.0.0.1 - - [15/Dec/2022 04:56:54] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:56:54,409 :: 127.0.0.1 - - [15/Dec/2022 04:56:54] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO 2022-12-15 04:59:46,001 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\server.py', reloading
+INFO 2022-12-15 04:59:46,160 ::  * Restarting with stat
+WARNING 2022-12-15 04:59:47,158 ::  * Debugger is active!
+INFO 2022-12-15 04:59:47,160 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:00:03,333 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\vardata.py', reloading
+INFO 2022-12-15 05:00:03,425 ::  * Restarting with stat
+WARNING 2022-12-15 05:00:04,370 ::  * Debugger is active!
+INFO 2022-12-15 05:00:04,372 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:01:00,932 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\db_utilities.py', reloading
+INFO 2022-12-15 05:01:01,033 ::  * Restarting with stat
+WARNING 2022-12-15 05:01:02,034 ::  * Debugger is active!
+INFO 2022-12-15 05:01:02,038 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:01:02,058 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\vardata.py', reloading
+INFO 2022-12-15 05:01:02,160 ::  * Restarting with stat
+WARNING 2022-12-15 05:01:03,190 ::  * Debugger is active!
+INFO 2022-12-15 05:01:03,193 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:02:05,846 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\server.py', reloading
+INFO 2022-12-15 05:02:05,958 ::  * Restarting with stat
+WARNING 2022-12-15 05:02:06,935 ::  * Debugger is active!
+INFO 2022-12-15 05:02:06,938 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:02:11,001 ::  * Detected change in 'C:\\Users\\chriden\\wincpythonproject\\vardata.py', reloading
+INFO 2022-12-15 05:02:11,086 ::  * Restarting with stat
+WARNING 2022-12-15 05:02:12,044 ::  * Debugger is active!
+INFO 2022-12-15 05:02:12,047 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:03:21,489 :: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-12-15 05:03:21,489 :: [33mPress CTRL+C to quit[0m
+INFO 2022-12-15 05:03:21,490 ::  * Restarting with stat
+WARNING 2022-12-15 05:03:22,331 ::  * Debugger is active!
+INFO 2022-12-15 05:03:22,333 ::  * Debugger PIN: 144-706-365
+INFO 2022-12-15 05:03:41,420 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "GET / HTTP/1.1" 200 -
+INFO 2022-12-15 05:03:41,557 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "[36mGET /static/support_files//Home.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:41,560 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "[36mGET /static/support_files/nicepage.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:41,561 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "[36mGET /static/support_files/nicepage.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:41,564 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "[36mGET /static/support_files/jquery.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:41,566 :: 127.0.0.1 - - [15/Dec/2022 05:03:41] "[36mGET /static/images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:45,062 :: 127.0.0.1 - - [15/Dec/2022 05:03:45] "GET /progress HTTP/1.1" 200 -
+ERROR 2022-12-15 05:03:45,071 :: Caught an exception in function:decode_file -----> FileNotFoundError(2, 'No such file or directory')
+ERROR 2022-12-15 05:03:47,267 :: Caught an exception in function:__init__ -----> FileNotFoundError(2, 'No such file or directory')
+ERROR 2022-12-15 05:03:52,656 :: Caught an exception in function:__init__ -----> FileNotFoundError(2, 'No such file or directory')
+INFO 2022-12-15 05:03:52,663 :: 127.0.0.1 - - [15/Dec/2022 05:03:52] "[35m[1mPOST /app_run HTTP/1.1[0m" 500 -
+INFO 2022-12-15 05:03:52,687 :: 127.0.0.1 - - [15/Dec/2022 05:03:52] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:52,691 :: 127.0.0.1 - - [15/Dec/2022 05:03:52] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO 2022-12-15 05:03:52,701 :: 127.0.0.1 - - [15/Dec/2022 05:03:52] "[36mGET /app_run?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
